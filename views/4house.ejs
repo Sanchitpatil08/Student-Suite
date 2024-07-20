@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House 4</title>
+    <link rel="stylesheet" href="/4house.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+    <!-- header section starts -->
+<header class="header">
+    <div class="navbar">
+        <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+        <div id="container">
+        <div id="close" onclick="closeMenu()">➕</div>
+        <ul id="menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/accommodation">Accommodation</a></li>
+            <li><a href="/food">Food</a></li>
+            <li><a href="/laundry">Laundry</a></li>
+        </ul>
+        </div>
+        <div class="logo">
+            <p>Student Suite</p>
+        </div>
+        <div class="contactBtn">
+            <a href="#contactSection"> <i class="fa-solid fa-user" style="color: #000000;" id="contactIcon"></i> </a>
+            <div class="contactText">
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- script for menu starts-->
+<script>
+    function openMenu()
+    {
+        document.getElementById('container').style.right='0%';
+        document.getElementById('menu').style.opacity='1';
+    }
+    function closeMenu()
+    {
+        document.getElementById('container').style.right='-100%';
+        document.getElementById('menu').style.opacity='0';
+    }
+</script>
+<!-- script for menu ends-->
+<!-- css for menu starts-->
+<style>
+    .menu-icon
+    {
+        float: left;
+        margin: 30px;
+        font-size: 25px;
+        cursor: pointer;
+        color: #000;
+    }
+    #close
+    {
+        margin: 20px;
+        float: left;
+        color: #000;
+        transform: rotate(45deg);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #menu li a{
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        margin: 5px 0px;
+        transition: all 0.3s ease;
+    }
+    #menu
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    #container
+    {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #e3e7f3;
+        text-align: center;
+        transition: all 0.6s ease;
+    }
+    #menu li a:hover
+    {
+        background-color: #000;
+        color: #fff;
+    }
+    </style>
+<!-- css for menu ends -->
+
+<!-- header section ends -->
+
+<body>
+
+    <div class="slider">
+    </div>
+
+    <div class="enquiry">
+        <p class="label">House 4</p>
+        <!-- popup button code -->
+        <button type="submit" class="sendBtn" onclick="openPopup()"> Send Enquiry </button>
+        <div class="popup" id = "popup">
+            <img src="/img/404-tick.png" alt="Tick Img">
+            <h2>Thank You!</h2>
+            <p>Your enquiry has been sent succesfully.</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+<div class="heading">LOCATION</div>
+    <div class="address">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212.33828316799205!2d-122.44275444742559!3d37.76465856552885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e01df3447fb%3A0xe2a7f1f728f7879d!2s399%20Roosevelt%20Way%2C%20San%20Francisco%2C%20CA%2094114%2C%20USA!5e0!3m2!1sen!2sin!4v1689295490634!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        <div class="textAdd">
+            <h3>Address:</h3>
+            <p>399 Roosevelt Way, San Francisco, CA 94114, USA</p>
+            <br>
+            <h3>Contact Details:</h3>
+            <p>834-793-9237</p>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading">AMINITIES</div>
+    <div class="aminities">
+        <div class="data">
+            <div>Free WiFi</div>
+            <div>Swimming Pool</div>
+            <div>Air Conditioning</div>
+            <div>Card-Key Access</div>
+            <div>Spacious Rooms</div>
+            <div>CCTV monitered</div>
+        </div>
+    </div>
+
+<!-- footer starts -->
+<footer>
+    <div class="branding">
+        <h3>Student Suite</h3>
+    </div>
+    <div class="socials">
+        <div class="icons">
+            <i class="fa-brands fa-facebook" style="color: #fff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #fff;"></i>
+            <i class="fa-brands fa-discord" style="color: #fff;"></i>
+        </div>
+    </div>
+</footer>
+<!-- footer ends -->
+
+
+<!-- popup starts -->
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+</body>
+</html>

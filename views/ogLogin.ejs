@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/ogLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="imgBx">
+            <img src="/img/login.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="/ogLogin" method="post">
+
+                    <div class="inputBx">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name = "username" placeholder="Enter your name." required autocomplete="off">
+                    </div>
+
+                    <div class="inputBx">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name = "password" placeholder="password" required>
+                    </div>
+
+                    <button type="submit" class="submitBtn">Log in</button>
+
+                    <div class="inputBx">
+                        <p>Don't have an account? <a href="/ogSignup">Sign up</a></p>
+                    </div>
+
+                    <h3 class="socialsHead">Login with social media</h3>
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

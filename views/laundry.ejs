@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="/laundry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- header section starts -->
+<header class="header">
+    <div class="navbar">
+        <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+        <div id="container">
+        <div id="close" onclick="closeMenu()">➕</div>
+        <ul id="menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/accommodation">Accommodation</a></li>
+            <li><a href="/food">Food</a></li>
+            <li><a href="/laundry">Laundry</a></li>
+        </ul>
+        </div>
+        <div class="logo">
+            <p>Student Suite</p>
+        </div>
+        <div class="contactBtn">
+            <a href="#contactSection"> <i class="fa-solid fa-user" style="color: #000000;" id="contactIcon"></i> </a>
+            <div class="contactText">
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- script for menu starts-->
+<script>
+    function openMenu()
+    {
+        document.getElementById('container').style.right='0%';
+        document.getElementById('menu').style.opacity='1';
+    }
+    function closeMenu()
+    {
+        document.getElementById('container').style.right='-100%';
+        document.getElementById('menu').style.opacity='0';
+    }
+</script>
+<!-- script for menu ends-->
+<!-- css for menu starts-->
+<style>
+    .menu-icon
+    {
+        float: left;
+        margin: 30px;
+        font-size: 25px;
+        cursor: pointer;
+        color: #000;
+    }
+    #close
+    {
+        margin: 20px;
+        float: left;
+        color: #000;
+        transform: rotate(45deg);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #menu li a{
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        margin: 5px 0px;
+        transition: all 0.3s ease;
+    }
+    #menu
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    #container
+    {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #e3e7f3;
+        text-align: center;
+        transition: all 0.6s ease;
+    }
+    #menu li a:hover
+    {
+        background-color: #000;
+        color: #fff;
+    }
+    </style>
+<!-- css for menu ends -->
+
+<!-- header section ends -->
+<!-- body section starts -->
+    <div class="mainBody">
+
+        <div class="stay1 displayBox">
+            <div class="imgDiv" style="background-image: url('/img/laundry/laundry1.jpg');"></div>
+            <div class="data">
+                <h2><a href="/html/infoPageHtml/1food.html">Laundry 1</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="stay2 displayBox">
+            <div class="imgDiv" style="background-image: url('/img/laundry/laundry2.jpg');"></div>
+            <div class="data">
+                <h2><a href="/html/infoPageHtml/2food.html">Laundry 2</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="stay3 displayBox">
+            <div class="imgDiv" style="background-image: url('/img/laundry/laundry3.jpg');"></div>
+            <div class="data">
+                <h2><a href="/html/infoPageHtml/3food.html">Laundry 3</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="stay4 displayBox">
+            <div class="imgDiv" style="background-image: url('/img/laundry/laundry4.jpg');"></div>
+            <div class="data">
+                <h2><a href="/html/infoPageHtml/4food.html">Laundry 4</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="stay5 displayBox">
+            <div class="imgDiv" style="background-image: url('/img/laundry/laundry5.jpg');"></div>
+            <div class="data">
+                <h2><a href="/html/infoPageHtml/5food.html">Laundry 5</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="stay6 displayBox">
+            <div class="imgDiv" style="background-image: url('/img/laundry/laundry6.jpg');"></div>
+            <div class="data">
+                <h2><a href="/html/infoPageHtml/6food.html">Laundry 6</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+<!-- body section ends -->
+
+<!-- footer starts -->
+<footer>
+    <div class="branding">
+        <h3>Student Suite</h3>
+    </div>
+    <div class="socials">
+        <div class="icons">
+            <i class="fa-brands fa-facebook" style="color: #fff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #fff;"></i>
+            <i class="fa-brands fa-discord" style="color: #fff;"></i>
+        </div>
+    </div>
+</footer>
+<!-- footer ends -->
+</body>
+</html>
